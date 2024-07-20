@@ -124,3 +124,6 @@ dmypy.json
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# Pkl files
+.pkl
