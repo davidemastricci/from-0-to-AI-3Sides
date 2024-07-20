@@ -18,10 +18,8 @@ if uploaded_files:
         score = predict(image)
         images_and_scores.append((image, score, uploaded_file.name))
 
-    # Sort images by score in descending order
     images_and_scores.sort(key=lambda x: x[1], reverse=True)
 
-    # Create a row with columns to display the images
     cols = st.columns(len(images_and_scores))
 
     for col, (image, score, filename) in zip(cols, images_and_scores):
