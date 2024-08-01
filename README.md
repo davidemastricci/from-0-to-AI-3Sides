@@ -83,3 +83,15 @@ $ conda env create -f environment.yml
 $ conda activate 3-Sides-dev
 $(3-Sides-dev) pip install -r requirements.txt
 ```
+
+### Using Docker
+
+To build and run the app using Docker, first build the project:
+```bash
+$ docker build -t dmastricci/3sidesai:last .
+```
+
+then run it on the desider port, here it is used 8080:
+```bash
+$ docker run --env-file .env -p 8080:8501 dmastricci/3sidesai:last
+```
