@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from PIL import Image
 from io import BytesIO
 
-# Load API key from .env file
+
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
@@ -69,11 +69,3 @@ def process_image(image):
         return content
     except ValueError as e:
         return str(e)
-
-
-# Example usage
-# image_path = "/Users/davidemastricci/Documents/personal_workspace/from-0-to-AI-3Sides/data_sample/goodexaple2.jpg"
-# image = Image.open(image_path)
-# content = process_image(image)
-# print("Extracted content:")
-# print(content)
