@@ -6,3 +6,5 @@ python-dotenv==1.0.1
 pandas==2.2.2
 streamlit==1.36.0
 pre-commit==3.7.1
+openai==1.37.1
+watchdog==4.0.1
